@@ -28,14 +28,14 @@ The tool performs the following tasks:
 
 ### *Timeline*
 
-*Input all course syllabi data into shared Excel document. (May-June)
+- *Input all course syllabi data into shared Excel document. (May-June)*
 
-*Create ERD, and import data into MySQL Workbench. (June)
+- *Create ERD, and import data into MySQL Workbench. (June)*
 
-*Clean data, fill information gaps, and create documentation for application. (June)
+- *Clean data, fill information gaps, and create documentation for application. (June)*
 
-*Create github, begin amalgamating readings into Zotero library. (June)
+- *Create github, begin amalgamating readings into Zotero library. (June)*
 
-*Begin developing application in R Shiny. (June)
+- *Begin developing application in R Shiny. (June)*
 
-*Complete application in first draft.
+- *Complete application in first draft.*
