@@ -39,3 +39,10 @@ The tool performs the following tasks:
 - *Begin developing application in R Shiny. (June)*
 
 - *Complete application in first draft.*
+
+## ERD
+
+![SIM_Nav_ERD](https://user-images.githubusercontent.com/60190864/121906607-a6adc700-cd01-11eb-8050-8a27ad5c6159.png)
+
+
+*The image above shows the ERD for the SIM Navigator application.*
