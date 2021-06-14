@@ -1,0 +1,6 @@
+# Here is an example of how to place an image
+
+This is the code:
+`![what you call the file](permalink path)`
+You can retrieve the permalink by uploading your image to your repository, selecting it, and then on the right, 'get permalink'
+
