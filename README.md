@@ -8,7 +8,7 @@ A repository that lays out the data and information about the SIM Navigator proj
 - application created using R Shiny
 - see Issues for current work in progress and Projects for cards identifying what needs to be done.
 
-##Specifications for application
+## Specifications for application
 
 ### Input
 
