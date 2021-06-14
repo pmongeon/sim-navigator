@@ -13,7 +13,7 @@ A repository that lays out the data and information about the SIM Navigator proj
 ### Input
 
 - syllabi data (course information, readings, assignments, etc.)
-- Zotero library links for course readings
+- [Zotero library links for course readings](https://www.zotero.org/groups/4286370/sim_navigator/library)
 
 ### Process
 
