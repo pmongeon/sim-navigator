@@ -4,27 +4,65 @@ description: "This website contains information about the SIM navigator and how 
 output: rmdformats::readthedown
 ---
 
-# Introduction {#home .unnumbered}
+<style>
+  #content {
+	max-width: 1400px;
+  }
+</style>
+
+# Introduction
 
 What is the SIM navigator?
 
-The SIM Navigator was
+The SIM Navigator was created by a team of students who extracted data from the SIM courses syllabi to create an open dataset of SIM courses. In the SIM programs, students learn the power of data and information to support decision and action.
 
--   An open data set of SIM courses
+We hope that the Navigator will help students save time and make ore enlightened decisions about their courses, that it will help faculty
 
--   A visual interface to explore SIM courses
+-   Help students get a better sense of the programs and make better de
 
--   A zotero library of course readings
+-   Give quicker and easier access to data related to SIM courses and programs
 
-# Dataset {#intro .unnumbered}
+The SIM navigator provides everyone easier access to data about SIM and its programs, to
 
-## Explore {.unnumbered}
+-   An open dataset of SIM courses.
+
+-   A set of tools that use the dataset to visualize and explore SIM courses and programs.
+
+-   A zotero library of course readings.
+
+The SIM navigator is a work in progress. If you would like to contribute to its development, please contact [Philippe Mongeon](https://www.dal.ca/faculty/management/school-of-information-management/faculty-staff/faculty/philippe-mongeon.html).
+
+# Explore SIM
 
 The team is currently developing a web application to explore the data. Coming soon.
 
+## Courses
+
+For now, you can already take a quick look at the courses offered at SIM
+
+```{r, echo = FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(DT)
+courses <- read_delim("data/courses.txt", delim = "\t") %>% 
+  select(course_code = '# course_code', title = course_title, type = 'course_type_id', summary) %>% 
+  mutate(type = as.character(case_when(type == 1 ~ "Elective",
+                          type == 2 ~ "Core",
+                          type == 3 ~ "Capstone",
+                          type == 4 ~ "Advanced tech")))
+  
+```
+
+```{r echo = FALSE, message=FALSE}
+datatable(courses, filter = 'top', rownames = FALSE, options = list(
+  pageLength = 5
+))
+```
+
+# Dataset {#intro .unnumbered}
+
 ## Download {.unnumbered}
 
-The data is structured as a relational database comprising 16 tables. Download a .zip file with all the tab-delimited text files [here](data/SimNavigator-202107.zip). You can also download the data as a single Excel file here.
+The data is structured as a relational database comprising 16 tables. Download a .zip file with all the tab-delimited text files [here](data/sim_navigator_data_202107.zip). You can also download the data as a single Excel file [here](data/sim_navigator_data.xlsx).
 
 The descriptions of all tables and fields can be found in the [documentation] below.
 
@@ -263,16 +301,18 @@ List of possible technologies used in SIM courses.
 
 A public Zotero Library containing all the School of Information Management course readings can be found [here](https://www.zotero.org/groups/4286370/sim_navigator/library){.uri}.
 
-You can also download the entire Zotero library in BibTeX format [with the associated files](test) or [without the files](test2) (only the references).
+You can also download the entire Zotero library in BibTeX format [here](zotero/sim_library_ref_only.bib) (references only).
 
 # Contributors {.unnumbered}
 
 Thank you to SIM students who helped create the SIM navigator:
 
 -   Theresa Boulos
--   Ratna Dhaliwal
--   Vinson Li
--   Molly McDougall
--   Poppy Riddle
 
-The SIM navigator is a work in progress. If you would like to contribute to its development, please contact [Philippe Mongeon](mailto:pmongeon@dal.ca).
+-   Ratna Dhaliwal
+
+-   Vinson Li
+
+-   Molly McDougall
+
+-   Poppy Riddle
