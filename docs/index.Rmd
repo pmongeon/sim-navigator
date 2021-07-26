@@ -79,29 +79,21 @@ Courses associated with SIM graduation certificates.
 
 List of program competencies.
 
-+-----------------+-------------+-------------------------------------+
 | Column          | Data type   | Description                         |
-+=================+=============+=====================================+
+|-----------------|-------------|-------------------------------------|
 | `competency_id` | SMALLINT    | ID number assigned to a competency. |
-+-----------------+-------------+-------------------------------------+
 | `competency`    | VARCHAR(45) | Name of competency.                 |
-+-----------------+-------------+-------------------------------------+
 | `description`   | LONGTEXT    | Description of competency.          |
-+-----------------+-------------+-------------------------------------+
 
 #### course_types {.unnumbered}
 
 List of course types.
 
-+-------------------+-------------+-----------------------------------------+
 | Column            | Data type   | Description                             |
-+===================+=============+=========================================+
+|-------------------|-------------|-----------------------------------------|
 | `coursetype_id`   | VARCHAR(30) | ID number assigned to each course type. |
-+-------------------+-------------+-----------------------------------------+
 | `course_type`     | VARCHAR(45) | Course type (elective, core, etc.)      |
-+-------------------+-------------+-----------------------------------------+
 | `type_definition` | LONGTEXT    | Course type description.                |
-+-------------------+-------------+-----------------------------------------+
 
 #### courses {.unnumbered}
 
@@ -249,19 +241,13 @@ List of tecnologies each course uses.
 
 List of SIM instructors.
 
-+-----------------+-------------+------------------------------------------------------+
 | Column          | Data type   | Description                                          |
-+=================+=============+======================================================+
+|-----------------|-------------|------------------------------------------------------|
 | `instructor_id` | VARCHAR(10) | ID number assigned to an instructor.                 |
-+-----------------+-------------+------------------------------------------------------+
 | `first_name`    | VARCHAR(45) | Instructor's first name.                             |
-+-----------------+-------------+------------------------------------------------------+
 | `last_name`     | VARCHAR(45) | Instructor's last name.                              |
-+-----------------+-------------+------------------------------------------------------+
 | `status`        | LONGTEXT    | Instructor status (ex. Lecturer, Adjunct Professor). |
-+-----------------+-------------+------------------------------------------------------+
 | `email`         | VARCHAR(45) | Email address of instructor.                         |
-+-----------------+-------------+------------------------------------------------------+
 
 #### programs {.unnumbered}
 
@@ -276,19 +262,14 @@ List of programs offered by Dalhousie's School of Information Management.
 
 List of possible technologies used in SIM courses.
 
-+-----------------+--------------+-------------------------------------+
 | Column          | Data type    | Description                         |
-+=================+==============+=====================================+
+|-----------------|--------------|-------------------------------------|
 | `technology_id` | SMALLINT     | ID number assigned to a technology. |
-+-----------------+--------------+-------------------------------------+
 | `technology`    | VARCHAR(255) | Name of technology.                 |
-+-----------------+--------------+-------------------------------------+
 
 # Zotero Library {.unnumbered}
 
 A public Zotero Library containing all the MI courses readings can be found [here](https://www.zotero.org/groups/4286370/sim_navigator/library){.uri}.
-
-You can also download the entire Zotero library in BibTeX format [here](zotero/sim_library_ref_only.bib) (references only).
 
 # Contributors {.unnumbered}
 
